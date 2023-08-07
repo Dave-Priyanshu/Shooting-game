@@ -720,7 +720,7 @@ for row in range(ROWS):
     world_data.append(r)
 #print(world_data)
 #load in level data and create world
-with open(f'level{level}_data.csv', newline ='') as csvfile:
+with open(f'levels/level{level}_data.csv', newline ='') as csvfile:
     reader = csv.reader(csvfile, delimiter = ',')
     for x, row in enumerate(reader):
         for y, tile in enumerate(row):
